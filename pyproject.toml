@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "stock-project"
+version = "0.1.0"
+description = ""
+authors = ["Davide Motta <davide.motta@luxottica.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.11"
+pandas = "^2.2.3"
+polars = "^1.9.0"
+duckdb = "^1.1.1"
+openpyxl = "^3.1.5"
+pyarrow = "^17.0.0"
+seaborn = "^0.13.2"
+plotly = "^5.24.1"
+matplotlib = "^3.9.2"
+ydata-profiling = "^4.10.0"
+ipywidgets = "^8.1.5"
+nltk = "^3.9.1"
+jupyterlab = "^4.2.5"
+nbformat = "^5.10.4"
+scikit-learn = "^1.5.2"
+prophet = "^1.1.6"
+catboost = "^1.2.7"
+shap = "^0.46.0"
+tslearn = "^0.6.3"
+fastapi = "^0.115.2"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+nest-asyncio = "^1.6.0"
+pydantic = "^2.9.2"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "stock_project:app"
